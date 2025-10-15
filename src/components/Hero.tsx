@@ -5,8 +5,17 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-pattern">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <video 
+        className="absolute inset-0 w-full h-full object-cover blur-[20%] z-0"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/hero2.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5 z-1" />
       
       <div className="container relative z-10 px-4 py-20">
         <motion.div
