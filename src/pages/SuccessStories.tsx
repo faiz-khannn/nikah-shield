@@ -32,7 +32,7 @@ const SuccessStories = () => {
       location: "Bradford, UK",
       date: "Married January 2024",
       story: "We appreciate how NikahConnect emphasizes family involvement. My Wali was able to participate in the process from day one, which gave us all peace of mind. The verification system also meant we could trust that profiles were genuine. Found my best friend and life partner here!",
-      image: "https://images.unsplash.com/photo-1529539795054-3c162aab037a?w=400"
+      image: "https://media.istockphoto.com/id/1298757638/photo/national-wedding-bride-and-groom-wedding-muslim-couple-during-the-marriage-ceremony-muslim.jpg?s=612x612&w=0&k=20&c=IZSdZRuMaHMnNwdPKQKq1vZ6IrcONjmA-_GuoIlD4m4="
     }
   ];
 
