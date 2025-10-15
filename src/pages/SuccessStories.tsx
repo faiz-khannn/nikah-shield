@@ -25,7 +25,7 @@ const SuccessStories = () => {
       location: "Manchester, UK",
       date: "Married September 2024",
       story: "The Deen-first matching was exactly what we needed. We connected over our shared commitment to our faith, and everything else fell into place naturally. The platform made it easy to have meaningful conversations while maintaining proper Islamic boundaries. Highly recommended!",
-      image: "https://images.unsplash.com/photo-1514846326710-096e4a8035e0?w=400"
+      image: "https://media.istockphoto.com/id/1298757638/photo/national-wedding-bride-and-groom-wedding-muslim-couple-during-the-marriage-ceremony-muslim.jpg?s=612x612&w=0&k=20&c=IZSdZRuMaHMnNwdPKQKq1vZ6IrcONjmA-_GuoIlD4m4="
     },
     {
       names: "Zainab & Ahmed",
