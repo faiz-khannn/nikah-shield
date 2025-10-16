@@ -1,308 +1,146 @@
-// Mock data for development and testing
+// Mock data for Tasneem Farook biodata platform
 
-export interface UserProfile {
+export interface BiodataSubmission {
   id: string;
-  firstName: string;
-  displayName: string;
-  gender: 'male' | 'female' | 'other';
-  dob: string;
-  age: number;
-  city: string;
-  country: string;
-  education: string;
-  profession: string;
-  religion: {
-    madhhab: string;
-    prayer: string;
-    fasting: string;
-    hijab_beard: string;
+  uniqueLinkId: string;
+  submittedAt: string;
+  status: 'pending' | 'completed' | 'shaadi_fixed';
+  submissionType: 'form' | 'pdf';
+  data: {
+    fullName: string;
+    age: number;
+    gender: 'male' | 'female';
+    email: string;
+    phone: string;
+    city: string;
+    country: string;
+    qualification: string;
+    profession: string;
+    salary?: string;
+    height?: string;
+    maritalStatus: string;
+    religiousPractice: string;
+    familyDetails?: string;
+    expectations?: string;
   };
-  intentions: string;
-  family: {
-    values: string;
-    ethnicity: string;
-  };
-  financial: {
-    habits: string;
-    debtStatus: string;
-  };
-  photos: Array<{
-    id: string;
-    status: 'blurred' | 'unblurred' | 'vaulted';
-    thumbUrl: string;
-    rules: {
-      unblurAfterMessages: number;
-      mutualConsentNeeded: boolean;
-    };
-  }>;
-  quizScores: {
-    prayer: number;
-    fasting: number;
-    compatibilityIndex: number;
-  };
-  verified: boolean;
-  bio?: string;
-  interests?: string[];
-  lastActive: string;
+  pdfUrl?: string;
+  notes?: string;
+  version: number;
 }
 
-export const mockProfiles: UserProfile[] = [
+export interface SuccessStory {
+  id: string;
+  coupleName: string;
+  location: string;
+  date: string;
+  story: string;
+  image: string;
+}
+
+export const mockBiodataSubmissions: BiodataSubmission[] = [
   {
     id: '1',
-    firstName: 'Aisha',
-    displayName: 'Aisha M.',
-    gender: 'female',
-    dob: '1995-03-15',
-    age: 29,
-    city: 'London',
-    country: 'UK',
-    education: 'Masters in Psychology',
-    profession: 'Clinical Psychologist',
-    religion: {
-      madhhab: 'Hanafi',
-      prayer: 'always',
-      fasting: 'always',
-      hijab_beard: 'yes'
+    uniqueLinkId: 'abc123def',
+    submittedAt: '2025-01-15T10:30:00Z',
+    status: 'shaadi_fixed',
+    submissionType: 'form',
+    data: {
+      fullName: 'Ahmed Hassan',
+      age: 28,
+      gender: 'male',
+      email: 'ahmed.h@example.com',
+      phone: '+91 9876543210',
+      city: 'Mumbai',
+      country: 'India',
+      qualification: 'B.Tech Computer Science',
+      profession: 'Software Engineer',
+      salary: '12-15 LPA',
+      height: '5\'10"',
+      maritalStatus: 'Never Married',
+      religiousPractice: 'Practising - Regular prayers and fasting',
+      familyDetails: 'Nuclear family, father is businessman, mother is homemaker',
+      expectations: 'Looking for a practising Muslim, educated, family-oriented'
     },
-    intentions: 'Marriage within 1-3 months',
-    family: {
-      values: 'Traditional',
-      ethnicity: 'Pakistani'
-    },
-    financial: {
-      habits: 'Saver',
-      debtStatus: 'No debt'
-    },
-    photos: [
-      {
-        id: 'p1',
-        status: 'blurred',
-        thumbUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400',
-        rules: {
-          unblurAfterMessages: 5,
-          mutualConsentNeeded: true
-        }
-      }
-    ],
-    quizScores: {
-      prayer: 5,
-      fasting: 5,
-      compatibilityIndex: 92
-    },
-    verified: true,
-    bio: 'Seeking a practicing Muslim who values faith and family. Love volunteering and reading.',
-    interests: ['Reading', 'Volunteering', 'Hiking', 'Cooking'],
-    lastActive: new Date().toISOString()
+    notes: 'Very good profile, family met, shaadi confirmed for March',
+    version: 2
   },
   {
     id: '2',
-    firstName: 'Fatima',
-    displayName: 'Fatima K.',
-    gender: 'female',
-    dob: '1997-07-22',
-    age: 27,
-    city: 'Manchester',
-    country: 'UK',
-    education: 'BA in Education',
-    profession: 'Primary School Teacher',
-    religion: {
-      madhhab: 'Shafi',
-      prayer: 'always',
-      fasting: 'always',
-      hijab_beard: 'yes'
+    uniqueLinkId: 'xyz789ghi',
+    submittedAt: '2025-01-20T14:45:00Z',
+    status: 'pending',
+    submissionType: 'pdf',
+    data: {
+      fullName: 'Fatima Zahra',
+      age: 25,
+      gender: 'female',
+      email: 'fatima.z@example.com',
+      phone: '+91 8765432109',
+      city: 'Delhi',
+      country: 'India',
+      qualification: 'MBA Finance',
+      profession: 'Banking Professional',
+      maritalStatus: 'Never Married',
+      religiousPractice: 'Practising - Wears hijab, regular prayers'
     },
-    intentions: 'Marriage within a year',
-    family: {
-      values: 'Moderate',
-      ethnicity: 'Somali'
-    },
-    financial: {
-      habits: 'Balanced',
-      debtStatus: 'student'
-    },
-    photos: [
-      {
-        id: 'p2',
-        status: 'blurred',
-        thumbUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400',
-        rules: {
-          unblurAfterMessages: 8,
-          mutualConsentNeeded: true
-        }
-      }
-    ],
-    quizScores: {
-      prayer: 5,
-      fasting: 5,
-      compatibilityIndex: 88
-    },
-    verified: true,
-    bio: 'Teacher who loves working with children. Looking for someone kind and family-oriented.',
-    interests: ['Teaching', 'Art', 'Travel', 'Quran Study'],
-    lastActive: new Date().toISOString()
+    pdfUrl: '/mock-biodatas/fatima-biodata.pdf',
+    version: 1
   },
   {
     id: '3',
-    firstName: 'Omar',
-    displayName: 'Omar A.',
-    gender: 'male',
-    dob: '1992-11-08',
-    age: 32,
-    city: 'Birmingham',
-    country: 'UK',
-    education: 'MBA',
-    profession: 'Business Analyst',
-    religion: {
-      madhhab: 'Maliki',
-      prayer: 'always',
-      fasting: 'always',
-      hijab_beard: 'yes'
+    uniqueLinkId: 'mno456pqr',
+    submittedAt: '2025-01-22T09:15:00Z',
+    status: 'completed',
+    submissionType: 'form',
+    data: {
+      fullName: 'Yusuf Ali',
+      age: 30,
+      gender: 'male',
+      email: 'yusuf.ali@example.com',
+      phone: '+91 7654321098',
+      city: 'Bangalore',
+      country: 'India',
+      qualification: 'MBBS, MD',
+      profession: 'Doctor',
+      salary: '20+ LPA',
+      height: '6\'0"',
+      maritalStatus: 'Never Married',
+      religiousPractice: 'Practising - Active in community work',
+      familyDetails: 'Joint family, father retired professor',
+      expectations: 'Educated, preferably in medical field, religious'
     },
-    intentions: 'Marriage within 1-3 months',
-    family: {
-      values: 'Traditional',
-      ethnicity: 'Moroccan'
-    },
-    financial: {
-      habits: 'Investor',
-      debtStatus: 'No debt'
-    },
-    photos: [
-      {
-        id: 'p3',
-        status: 'blurred',
-        thumbUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400',
-        rules: {
-          unblurAfterMessages: 5,
-          mutualConsentNeeded: true
-        }
-      }
-    ],
-    quizScores: {
-      prayer: 5,
-      fasting: 5,
-      compatibilityIndex: 90
-    },
-    verified: true,
-    bio: 'Practicing Muslim seeking a life partner. Value honesty, respect, and strong Deen.',
-    interests: ['Business', 'Sports', 'Travel', 'Islamic Studies'],
-    lastActive: new Date().toISOString()
+    notes: 'Profile shortlisted, family contacted',
+    version: 1
   }
 ];
 
-export const mockQuizQuestions = [
+export const mockSuccessStories: SuccessStory[] = [
   {
-    id: 'q1',
-    category: 'prayer',
-    question: 'How often do you perform your five daily prayers?',
-    type: 'radio',
-    options: [
-      { value: 'always', label: 'Always (all 5 prayers on time)', score: 5 },
-      { value: 'usually', label: 'Usually (occasionally miss one)', score: 4 },
-      { value: 'sometimes', label: 'Sometimes (trying to be consistent)', score: 3 },
-      { value: 'rarely', label: 'Rarely', score: 2 }
-    ]
+    id: '1',
+    coupleName: 'Zainab & Mohammed',
+    location: 'Mumbai, India',
+    date: 'Married December 2024',
+    story: 'Through Tasneem Farook\'s guidance and professional approach, we found each other. The biodata process was dignified and respectful, allowing our families to connect meaningfully. Alhamdulillah, we are now happily married and grateful for this service.',
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=400'
   },
   {
-    id: 'q2',
-    category: 'fasting',
-    question: 'Do you fast during Ramadan?',
-    type: 'radio',
-    options: [
-      { value: 'always', label: 'Yes, every day unless medically unable', score: 5 },
-      { value: 'usually', label: 'Yes, most days', score: 4 },
-      { value: 'sometimes', label: 'Some days', score: 3 },
-      { value: 'rarely', label: 'Rarely or never', score: 2 }
-    ]
+    id: '2',
+    coupleName: 'Aisha & Ibrahim',
+    location: 'Hyderabad, India',
+    date: 'Married October 2024',
+    story: 'The professional and faith-centered approach made all the difference. Our families appreciated the transparency and Islamic values maintained throughout. May Allah bless Tasneem Farook for this beautiful service.',
+    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400'
   },
   {
-    id: 'q3',
-    category: 'madhhab',
-    question: 'Which school of thought (madhhab) do you follow?',
-    type: 'radio',
-    options: [
-      { value: 'hanafi', label: 'Hanafi', score: 5 },
-      { value: 'shafi', label: 'Shafi', score: 5 },
-      { value: 'maliki', label: 'Maliki', score: 5 },
-      { value: 'hanbali', label: 'Hanbali', score: 5 },
-      { value: 'other', label: 'Other / Not specific', score: 4 }
-    ]
-  },
-  {
-    id: 'q4',
-    category: 'hijab_beard',
-    question: 'Do you wear hijab/maintain a beard?',
-    type: 'radio',
-    options: [
-      { value: 'yes', label: 'Yes, always', score: 5 },
-      { value: 'sometimes', label: 'Sometimes', score: 3 },
-      { value: 'no', label: 'No', score: 2 }
-    ]
-  },
-  {
-    id: 'q5',
-    category: 'quran',
-    question: 'How often do you read/recite Quran?',
-    type: 'radio',
-    options: [
-      { value: 'daily', label: 'Daily', score: 5 },
-      { value: 'weekly', label: 'Weekly', score: 4 },
-      { value: 'monthly', label: 'Monthly', score: 3 },
-      { value: 'occasionally', label: 'Occasionally', score: 2 }
-    ]
-  },
-  {
-    id: 'q6',
-    category: 'family',
-    question: 'What are your family values?',
-    type: 'radio',
-    options: [
-      { value: 'traditional', label: 'Traditional - strong emphasis on cultural and Islamic practices', score: 5 },
-      { value: 'moderate', label: 'Moderate - balance between tradition and modern life', score: 4 },
-      { value: 'liberal', label: 'Liberal - open-minded and progressive', score: 3 }
-    ]
-  },
-  {
-    id: 'q7',
-    category: 'intentions',
-    question: 'When are you hoping to get married?',
-    type: 'radio',
-    options: [
-      { value: '1-3months', label: 'Within 1-3 months', score: 5 },
-      { value: '3-6months', label: 'Within 3-6 months', score: 4 },
-      { value: 'within-year', label: 'Within a year', score: 3 },
-      { value: 'exploring', label: 'Just exploring for now', score: 2 }
-    ]
+    id: '3',
+    coupleName: 'Mariam & Hassan',
+    location: 'Delhi, India',
+    date: 'Married September 2024',
+    story: 'We were both looking for a serious, halal way to find a life partner. The structured biodata system and family-first approach helped us make the right decision. Highly recommended for anyone seeking nikah with dignity.',
+    image: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400'
   }
 ];
 
-export interface ChatMessage {
-  id: string;
-  senderId: string;
-  receiverId: string;
-  content: string;
-  timestamp: string;
-  read: boolean;
-  type: 'text' | 'icebreaker' | 'unblur-request' | 'system';
-}
-
-export const mockMessages: ChatMessage[] = [
-  {
-    id: 'm1',
-    senderId: '1',
-    receiverId: 'current-user',
-    content: 'As-salamu alaykum! How are you doing today?',
-    timestamp: new Date(Date.now() - 3600000).toISOString(),
-    read: true,
-    type: 'text'
-  },
-  {
-    id: 'm2',
-    senderId: 'current-user',
-    receiverId: '1',
-    content: "Wa alaykumu as-salam! I'm doing well, alhamdulillah. How about you?",
-    timestamp: new Date(Date.now() - 3000000).toISOString(),
-    read: true,
-    type: 'text'
-  }
-];
+export const generateMockUniqueId = (): string => {
+  return Math.random().toString(36).substring(2, 11);
+};

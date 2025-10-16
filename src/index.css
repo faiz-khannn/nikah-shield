@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 42 100% 97%;
-    --foreground: 180 10% 15%;
+    --background: 0 0% 98%;
+    --foreground: 210 90% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 180 10% 15%;
+    --card-foreground: 210 90% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 180 10% 15%;
+    --popover-foreground: 210 90% 20%;
 
-    --primary: 173 80% 25%;
+    --primary: 210 90% 36%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 348 83% 60%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 345 60% 80%;
+    --secondary-foreground: 210 90% 20%;
 
-    --muted: 42 30% 95%;
-    --muted-foreground: 180 5% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 210 20% 50%;
 
-    --accent: 38 92% 50%;
+    --accent: 345 30% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 42 30% 90%;
-    --input: 42 30% 90%;
-    --ring: 173 80% 25%;
+    --border: 210 30% 90%;
+    --input: 210 30% 90%;
+    --ring: 210 90% 36%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
     
-    --teal-deep: 173 80% 25%;
-    --coral-warm: 348 83% 60%;
-    --gold: 38 92% 50%;
-    --cream: 42 100% 97%;
-    --neutral-dark: 180 10% 15%;
+    --navy-deep: 210 90% 36%;
+    --rose-dusty: 345 60% 80%;
+    --rose-gold: 345 30% 60%;
+    --neutral-light: 0 0% 98%;
+    --neutral-dark: 210 90% 20%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(173 80% 25%), hsl(173 70% 35%));
-    --gradient-hero: linear-gradient(135deg, hsl(173 80% 25%), hsl(348 83% 60%));
-    --gradient-warm: linear-gradient(135deg, hsl(348 83% 60%), hsl(38 92% 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(42 100% 97%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 90% 36%), hsl(210 80% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 90% 36%), hsl(345 30% 60%));
+    --gradient-warm: linear-gradient(135deg, hsl(345 60% 80%), hsl(345 30% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
     
-    --shadow-elegant: 0 10px 30px -10px hsl(173 80% 25% / 0.2);
-    --shadow-glow: 0 0 40px hsl(348 83% 60% / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(210 90% 36% / 0.15);
+    --shadow-glow: 0 0 40px hsl(345 30% 60% / 0.2);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -72,33 +72,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 180 15% 8%;
-    --foreground: 42 100% 97%;
+    --background: 210 30% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 180 15% 12%;
-    --card-foreground: 42 100% 97%;
+    --card: 210 30% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 180 15% 12%;
-    --popover-foreground: 42 100% 97%;
+    --popover: 210 30% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 173 70% 40%;
+    --primary: 210 80% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 348 75% 55%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 345 50% 65%;
+    --secondary-foreground: 210 90% 20%;
 
-    --muted: 180 10% 18%;
-    --muted-foreground: 180 5% 65%;
+    --muted: 210 20% 20%;
+    --muted-foreground: 210 10% 70%;
 
-    --accent: 38 85% 55%;
+    --accent: 345 30% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 180 10% 18%;
-    --input: 180 10% 18%;
-    --ring: 173 70% 40%;
+    --border: 210 20% 25%;
+    --input: 210 20% 25%;
+    --ring: 210 80% 50%;
   }
 }
 
@@ -113,7 +113,7 @@ All colors MUST be HSL.
   }
   
   .bg-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230F766E' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230D47A1' fill-opacity='0.03'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
   
   .blur-overlay {
