@@ -29,9 +29,11 @@ export const Navbar = () => {
   };
 
   return (
-    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-      isScrolled ? 'border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ease-in-out ${
+    isScrolled
+      ? "bg-white/90 shadow-md backdrop-blur-sm"
+      : "bg-transparent"
+  }`}>
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
           <span className="text-2xl font-bold font-[Zaslia] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
