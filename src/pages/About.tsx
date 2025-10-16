@@ -8,7 +8,7 @@ const About = () => {
     <div className="min-h-screen">
       <Navbar />
       
-      <section className="pt-32 pb-20 bg-pattern">
+      <section className="py-20 bg-pattern">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
