@@ -51,7 +51,7 @@ const SuccessStories = () => {
             <div className="inline-block mb-4">
               <Heart className="w-16 h-16 text-secondary mx-auto fill-current" />
             </div>
-            <h1 className="text-5xl font-[Agraham] md:text-6xl font-bold">Success Stories</h1>
+            <h1 className="text-5xl font-[Agraham] md:text-6xl font-bold" style={{ lineHeight: '1.5' }}>Success Stories</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Real couples who found their match through NikahConnect. 
               May Allah bless all these unions with happiness and barakah.
