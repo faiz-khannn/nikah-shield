@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
 
-const WHATSAPP_NUMBER = "918839487027";
+const WHATSAPP_NUMBER = "8839487027";
 const DEFAULT_MESSAGE = "Hello! I'm interested in your services.";
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const openWhatsApp = () => {
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
+    const url = `https://web.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
     window.open(url, '_blank');
   };
 

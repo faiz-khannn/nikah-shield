@@ -1,12 +1,12 @@
 import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
-const WHATSAPP_NUMBER = "918839487027";
+const WHATSAPP_NUMBER = "8839487027";
 const DEFAULT_MESSAGE = "Hello! I'm interested in your matrimonial services. Please guide me.";
 
 export const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
+    const url = `https://web.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
     window.open(url, '_blank');
   };
 
