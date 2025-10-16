@@ -51,7 +51,7 @@ const BioDataSubmission = () => {
 
   if (submitted) {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen pt-20">
         <Navbar />
         <div className="container mx-auto px-4 py-20 max-w-2xl">
           <motion.div
@@ -88,7 +88,7 @@ const BioDataSubmission = () => {
 
   if (!submissionType) {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen pt-20">
         <Navbar />
         <div className="container mx-auto px-4 py-20 max-w-4xl">
           <motion.div
@@ -132,7 +132,7 @@ const BioDataSubmission = () => {
 
   if (submissionType === 'pdf') {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen pt-20">
         <Navbar />
         <div className="container mx-auto px-4 py-20 max-w-2xl">
           <Card>
@@ -171,7 +171,7 @@ const BioDataSubmission = () => {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-20">
       <Navbar />
       <div className="container mx-auto px-4 py-20 max-w-3xl">
         <motion.div

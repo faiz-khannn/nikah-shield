@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
 
@@ -9,6 +9,8 @@ const DEFAULT_MESSAGE = "Hello! I'm interested in your services.";
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,16 +31,16 @@ export const Navbar = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ease-in-out ${isScrolled
-        ? "bg-white/90 shadow-md backdrop-blur-sm"
-        : "bg-transparent"
+    <header className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ease-in-out ${isHomePage && !isScrolled
+      ? "bg-transparent"
+      : "bg-white/90 shadow-md backdrop-blur-sm"
       }`}>
       <nav className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
           <span
-            className={`text-3xl font-[Zaslia] font-bold tracking-wide transition-all duration-300 ${isScrolled
-                ? "text-primary"
-                : "text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
+            className={`text-3xl font-[Zaslia] font-bold tracking-wide transition-all duration-300 ${isHomePage && !isScrolled
+              ? "text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
+              : "bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
               }`}
           >
             Tasneem Farook
@@ -47,16 +49,32 @@ export const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8 font-[Montserrat]">
-          <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            to="/"
+            className={`text-sm font-medium hover:text-primary transition-colors ${isHomePage && !isScrolled ? "text-white" : ""
+              }`}
+          >
             Home
           </Link>
-          <Link to="/about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            to="/about"
+            className={`text-sm font-medium hover:text-primary transition-colors ${isHomePage && !isScrolled ? "text-white" : ""
+              }`}
+          >
             About
           </Link>
-          <Link to="/success-stories" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            to="/success-stories"
+            className={`text-sm font-medium hover:text-primary transition-colors ${isHomePage && !isScrolled ? "text-white" : ""
+              }`}
+          >
             Hall of Fame
           </Link>
-          <Link to="/contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            to="/contact"
+            className={`text-sm font-medium hover:text-primary transition-colors ${isHomePage && !isScrolled ? "text-white" : ""
+              }`}
+          >
             Contact
           </Link>
           <Button onClick={openWhatsApp} className="gap-2">
@@ -67,7 +85,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className={`md:hidden ${isHomePage && !isScrolled ? "text-white" : ""}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >

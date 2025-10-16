@@ -37,7 +37,7 @@ const SuccessStories = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-20">
       <Navbar />
       
       <section className="py-20 bg-pattern">
