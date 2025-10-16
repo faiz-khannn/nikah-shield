@@ -33,7 +33,7 @@ export const Hero = () => {
           className="w-full h-full object-cover"
           style={{ opacity: isVideoLoaded ? 0.7 : 0 }}
         >
-          <source src="/hero2.mp4" type="video/mp4" />
+          <source src="https://faizmediavault.netlify.app/media/hero2.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
       </div>
