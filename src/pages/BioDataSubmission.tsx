@@ -64,7 +64,7 @@ const BioDataSubmission = () => {
                 <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
                   <CheckCircle className="w-10 h-10 text-green-600" />
                 </div>
-                <CardTitle className="text-2xl">Submission Successful!</CardTitle>
+                <CardTitle className="text-2xl ">Submission Successful!</CardTitle>
                 <CardDescription>
                   Your biodata has been submitted successfully. We will review it and get back to you soon.
                 </CardDescription>
@@ -96,7 +96,7 @@ const BioDataSubmission = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl font-bold text-center mb-4">Submit Your Biodata</h1>
+            <h1 className="text-4xl font-bold font-[Agraham] text-center mb-4">Submit Your Biodata</h1>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
               Choose how you would like to submit your biodata. You can either fill out our structured form or upload a PDF.
             </p>
@@ -179,7 +179,7 @@ const BioDataSubmission = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold text-center mb-4">Biodata Submission Form</h1>
+          <h1 className="text-4xl font-bold font-[Agraham] text-center mb-4">Biodata Submission Form</h1>
           <p className="text-center text-muted-foreground mb-8">
             Please fill in all the details accurately. All information will be kept confidential.
           </p>

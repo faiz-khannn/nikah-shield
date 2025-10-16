@@ -54,10 +54,10 @@ export const Hero = () => {
             transition={{ duration: 0.5 }}
             className="inline-block mb-4 px-6 py-3 bg-secondary/20 border border-accent/30 rounded-full backdrop-blur-sm"
           >
-            <p className="text-sm font-medium text-foreground">Faith • Dignity • Professional Service</p>
+            <p className="text-sm font-[Montserrat] font-medium text-foreground">Faith • Dignity • Professional Service</p>
           </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight font-serif">
+          <h1 className="text-5xl md:text-7xl font-[Montserrat] font-bold leading-tight font-serif">
             Simplifying the Path to Nikah
             <br />
             <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent font-sans">
@@ -65,7 +65,7 @@ export const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto leading-relaxed backdrop-blur-sm bg-black/10 p-4 rounded-lg">
+          <p className="text-xl md:text-2xl font-[Montserrat] text-white max-w-2xl mx-auto leading-relaxed backdrop-blur-sm bg-black/10 p-4 rounded-lg">
             A trusted matrimonial service guided by Islamic values, helping families connect with respect and transparency.
           </p>
           
@@ -80,7 +80,7 @@ export const Hero = () => {
               size="lg" 
               className="text-lg px-10 py-7 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#20BA5A] hover:to-[#0E7F73] text-white"
             >
-              <span className="relative z-10">Get Started on WhatsApp</span>
+              <span className="relative z-10 font-[Montserrat]">Get Started on WhatsApp</span>
             </Button>
           </motion.div>
           
@@ -91,7 +91,7 @@ export const Hero = () => {
             className="relative mt-12 pt-8"
           >
             <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-border/50 to-transparent" />
-            <p className="text-sm bg-black/40 text-amber-100 p-3 rounded-lg shadow-lg quote-text backdrop-blur-md inline-block mx-auto">
+            <p className="text-sm font-[Montserrat] bg-black/40 text-amber-100 p-3 rounded-lg shadow-lg quote-text backdrop-blur-md inline-block mx-auto">
               "And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them..." — Quran 30:21
             </p>
           </motion.div>

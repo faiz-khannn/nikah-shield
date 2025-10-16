@@ -71,7 +71,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold mb-4">Why Choose Tasneem Farook</h2>
+            <h2 className="text-4xl font-[Agraham] font-bold mb-4">Why Choose Tasneem Farook</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               A trusted service combining Islamic values with modern professionalism
             </p>
@@ -109,7 +109,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold mb-4">How It Works</h2>
+            <h2 className="text-4xl font-[Agraham] font-bold mb-4">How It Works</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Simple, dignified, and effective process
             </p>
@@ -157,7 +157,7 @@ const Index = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-4">Ready to Begin?</h2>
+            <h2 className="text-4xl  font-bold mb-4">Ready to Begin?</h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               Take the first step towards a blessed nikah. Contact us today and let's start this journey together.
             </p>

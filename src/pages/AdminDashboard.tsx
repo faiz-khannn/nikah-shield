@@ -79,7 +79,7 @@ const AdminDashboard = () => {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h1 className="text-4xl font-bold mb-2 flex items-center gap-3">
-                <Shield className="w-10 h-10 text-primary" />
+                <Shield className="w-10 h-10 font-text-primary" />
                 Admin Dashboard
               </h1>
               <p className="text-muted-foreground">Manage biodata submissions and links</p>

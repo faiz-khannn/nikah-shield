@@ -34,13 +34,13 @@ export const Navbar = () => {
     }`}>
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <span className="text-2xl font-bold font-[Zaslia] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Tasneem Farook
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 font-[Montserrat]">
           <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
             Home
           </Link>
