@@ -12,7 +12,7 @@ import { mockBiodataSubmissions, generateMockUniqueId } from "@/lib/mockData";
 import { toast } from "sonner";
 import { motion } from "framer-motion";
 
-const WHATSAPP_NUMBER = "918839487027";
+const WHATSAPP_NUMBER = "8839487027";
 
 const AdminDashboard = () => {
   const [biodatas, setBiodatas] = useState(mockBiodataSubmissions);

@@ -6,7 +6,7 @@ const DEFAULT_MESSAGE = "Hello! I'm interested in your matrimonial services. Ple
 
 export const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    const url = `https://web.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
     window.open(url, '_blank');
   };
 

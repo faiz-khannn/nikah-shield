@@ -16,7 +16,7 @@ export const Hero = () => {
   }, []);
 
   const openWhatsApp = () => {
-    const url = `https://web.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
     window.open(url, '_blank');
   };
 
@@ -91,7 +91,7 @@ export const Hero = () => {
             className="relative mt-12 pt-8"
           >
             <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-border/50 to-transparent" />
-            <p className="text-sm text-white/80 italic font-serif">
+            <p className="text-sm bg-black/40 text-amber-100 p-3 rounded-lg shadow-lg quote-text backdrop-blur-md inline-block mx-auto">
               "And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them..." — Quran 30:21
             </p>
           </motion.div>
