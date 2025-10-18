@@ -82,7 +82,7 @@ const SuccessStories = () => {
                     </div>
                     <div className="md:w-2/3">
                       <CardHeader className="space-y-4">
-                        <h3 className="text-2xl font-[Agraham] font-bold">{story.names}</h3>
+                        <h3 className="text-2xl font-[Agraham] font-bold" style={{ lineHeight: '1.6' }}>{story.names}</h3>
                         <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                           <div className="flex items-center gap-2">
                             <MapPin className="w-4 h-4" />
@@ -114,7 +114,7 @@ const SuccessStories = () => {
             className="text-center mt-16 p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border border-border"
           >
             <Heart className="w-12 h-12 text-secondary mx-auto mb-4 fill-current" />
-            <h2 className="text-3xl font-[Agraham] font-bold mb-4">Your Story Could Be Next</h2>
+            <h2 className="text-3xl font-[Agraham] font-bold mb-4" style={{ lineHeight: '1.6' }}>Your Story Could Be Next</h2>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
               Join thousands of Muslims who have found their life partners through our platform. 
               Start your journey to a blessed Nikah today.

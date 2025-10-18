@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-5xl font-[Zaslia] font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <h3 className="text-5xl font-[Zaslia] font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style={{ lineHeight: '1.2' }}>
               Tasneem Farook
             </h3>
             <p className="text-sm font-[Montserrat] text-muted-foreground">
