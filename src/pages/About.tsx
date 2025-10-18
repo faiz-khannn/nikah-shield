@@ -16,7 +16,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center space-y-6"
           >
-            <h1 className="text-5xl font-[Agraham] md:text-6xl font-bold">Our Mission</h1>
+            <h1 className="text-5xl font-[Agraham] md:text-6xl font-bold" style={{ lineHeight: '1.6' }}>Our Mission</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               To provide a safe, respectful, and dignified platform for practicing Muslims 
               to find their life partners while upholding Islamic values and principles.
@@ -34,7 +34,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-[Agraham] font-bold mb-4">Who We Are</h2>
+              <h2 className="text-3xl font-[Agraham] font-bold mb-4" style={{ lineHeight: '1.6' }}>Who We Are</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 NikahConnect was founded by Muslims who recognized the need for a matrimonial 
                 platform that truly respects Islamic values and personal privacy. We understand 
@@ -49,7 +49,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-[Agraham] font-bold mb-6">Our Values</h2>
+              <h2 className="text-3xl font-[Agraham] font-bold mb-6" style={{ lineHeight: '1.6' }}>Our Values</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
                   {
@@ -99,7 +99,7 @@ const About = () => {
               viewport={{ once: true }}
               className="bg-primary/5 p-8 rounded-2xl border border-primary/20"
             >
-              <h2 className="text-3xl font-[Agraham] font-bold mb-4">Islamic Guidelines</h2>
+              <h2 className="text-3xl font-[Agraham] font-bold mb-4" style={{ lineHeight: '1.6' }}>Islamic Guidelines</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p className="leading-relaxed">
                   <strong className="text-foreground">Modesty & Respect:</strong> All interactions 

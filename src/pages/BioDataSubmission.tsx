@@ -96,7 +96,7 @@ const BioDataSubmission = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl font-bold font-[Agraham] text-center mb-4">Submit Your Biodata</h1>
+            <h1 className="text-4xl font-bold font-[Agraham] text-center mb-4" style={{ lineHeight: '1.6' }}>Submit Your Biodata</h1>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
               Choose how you would like to submit your biodata. You can either fill out our structured form or upload a PDF.
             </p>
@@ -179,7 +179,7 @@ const BioDataSubmission = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold font-[Agraham] text-center mb-4">Biodata Submission Form</h1>
+          <h1 className="text-4xl font-bold font-[Agraham] text-center mb-4" style={{ lineHeight: '1.6' }}>Biodata Submission Form</h1>
           <p className="text-center text-muted-foreground mb-8">
             Please fill in all the details accurately. All information will be kept confidential.
           </p>

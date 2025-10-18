@@ -71,7 +71,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-[Agraham] font-bold mb-4">Why Choose Tasneem Farook</h2>
+            <h2 className="text-4xl font-[Agraham] font-bold mb-4" style={{ lineHeight: '1.6' }}>Why Choose Tasneem Farook</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               A trusted service combining Islamic values with modern professionalism
             </p>
@@ -109,7 +109,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-[Agraham] font-bold mb-4">How It Works</h2>
+            <h2 className="text-4xl font-[Agraham] font-bold mb-4" style={{ lineHeight: '1.6' }}>How It Works</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Simple, dignified, and effective process
             </p>
